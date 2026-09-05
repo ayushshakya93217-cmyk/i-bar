@@ -123,7 +123,7 @@ class EditorActivity : AppCompatActivity() {
         val steps = 200
         val labelView = TextView(this).apply { text = "$label: ${"%.1f".format(get())}" }
         val seek = SeekBar(this).apply {
-            max = steps
+            this.max = steps
             progress = (((get() - min) / (max - min)) * steps).toInt().coerceIn(0, steps)
         }
         seek.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener {
