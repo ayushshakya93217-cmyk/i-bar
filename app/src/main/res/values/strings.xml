@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">iOS Status Bar Overlay</string>
+    <string name="editor_title">Status Bar Editor</string>
+    <string name="presets_title">Presets</string>
+    <string name="enable_overlay_label">Enable Status Bar</string>
+    <string name="edit_status_bar">Edit Status Bar</string>
+    <string name="export_settings">Export Settings</string>
+    <string name="import_settings">Import Settings</string>
+    <string name="enable_accessibility_button">Open Accessibility Settings</string>
+    <string name="accessibility_permission_explainer">This app draws the iPhone-style status bar using an Accessibility Service overlay, which is the only Android mechanism that lets a transparent bar sit above other apps without a permanent notification. Turn on \"iOS Status Bar Overlay\" under Accessibility to enable it. No screen content is read or recorded — the service only watches for the notification shade opening/closing so it can hide the overlay at the right moment.</string>
+    <string name="accessibility_service_description">Draws a transparent, iPhone-style status bar overlay at the top of the screen and hides it automatically while you have the notification shade open. Does not read or record screen content.</string>
+</resources>

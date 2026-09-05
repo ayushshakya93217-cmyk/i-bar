@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Drag any element on the preview below, or use the sliders."
+        android:padding="12dp"
+        android:textSize="13sp"
+        android:background="#ECEFF1" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#000000">
+        <com.statusbar.ios.StatusBarOverlayView
+            android:id="@+id/editorPreview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <Button android:id="@+id/btnSave" android:layout_width="0dp" android:layout_weight="1"
+            android:layout_height="wrap_content" android:text="Save" style="?android:attr/buttonStyleSmall" />
+        <Button android:id="@+id/btnSaveAsNew" android:layout_width="0dp" android:layout_weight="1"
+            android:layout_height="wrap_content" android:text="Save as New" style="?android:attr/buttonStyleSmall" />
+        <Button android:id="@+id/btnReset" android:layout_width="0dp" android:layout_weight="1"
+            android:layout_height="wrap_content" android:text="Reset" style="?android:attr/buttonStyleSmall" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/controlsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp" />
+    </ScrollView>
+</LinearLayout>
